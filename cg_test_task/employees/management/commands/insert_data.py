@@ -3,7 +3,6 @@ import os
 
 from django.conf import settings
 from django.core.management.base import BaseCommand
-
 from employees import models
 
 FILES_MODELS = {
@@ -11,7 +10,7 @@ FILES_MODELS = {
     "employees.csv": "Employee",
 }
 
-PK_FIELDS = {"supervisor":"JobRelation", "post": "JobRelation"}
+PK_FIELDS = {"supervisor": "JobRelation", "post": "JobRelation"}
 
 
 class Command(BaseCommand):
